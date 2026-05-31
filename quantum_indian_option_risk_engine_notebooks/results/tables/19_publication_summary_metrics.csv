@@ -1,0 +1,7 @@
+,metric,value
+0,Quantum price RMSE,1139.4633355192257
+1,Quantum max abs error,6446.217961214518
+2,Post-selection probability,0.8972465105200036
+3,Portfolio theoretical value,-4352.128681811483
+4,VaR 95,34632.123245292576
+5,ES 95,43957.8681194534
