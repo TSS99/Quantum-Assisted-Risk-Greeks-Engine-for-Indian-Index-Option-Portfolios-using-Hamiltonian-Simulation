@@ -1,0 +1,6 @@
+,underlying,option_type,strike,expiry,quantity,market_price,implied_volatility,risk_free_rate,spot,maturity,label,source
+0,NIFTY,put,24000.0,2026-06-25,75.0,610.0,0.18,0.065,24000.0,0.0821917808,NIFTY_ATM_LONG_PUT_30D,synthetic_manual_config
+1,NIFTY,call,25000.0,2026-06-25,-50.0,210.0,0.19,0.065,24000.0,0.0821917808,NIFTY_OTM_SHORT_CALL_30D,synthetic_manual_config
+2,BANKNIFTY,call,52000.0,2026-06-09,30.0,965.0,0.22,0.065,52000.0,0.0383561644,BANKNIFTY_ATM_LONG_CALL_14D,synthetic_manual_config
+3,BANKNIFTY,put,54000.0,2026-07-25,-20.0,2630.0,0.24,0.065,52000.0,0.1643835616,BANKNIFTY_ITM_SHORT_PUT_60D,synthetic_manual_config
+4,NIFTY,put,23000.0,2026-06-02,100.0,58.0,0.2,0.065,24000.0,0.0191780822,NIFTY_OTM_LONG_PUT_7D,synthetic_manual_config

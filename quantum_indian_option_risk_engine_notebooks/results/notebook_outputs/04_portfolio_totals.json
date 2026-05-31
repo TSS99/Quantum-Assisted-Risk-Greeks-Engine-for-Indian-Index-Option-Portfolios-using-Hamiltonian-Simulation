@@ -1,0 +1,10 @@
+{
+  "total_theoretical_value": -4352.128681811483,
+  "total_market_value": 17400.0,
+  "total_pnl": -21752.128681811486,
+  "portfolio_Delta": -24.721681471824983,
+  "portfolio_Gamma": 0.03199640514565869,
+  "portfolio_Vega": 85983.05325349397,
+  "portfolio_Theta": -527702.2044499277,
+  "portfolio_Rho": 44012.35533841665
+}
