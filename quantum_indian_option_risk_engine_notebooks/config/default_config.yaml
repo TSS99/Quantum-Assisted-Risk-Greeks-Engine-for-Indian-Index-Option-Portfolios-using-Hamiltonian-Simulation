@@ -1,0 +1,68 @@
+project:
+  name: Quantum Assisted Risk and Greeks Engine for Indian Index Option Portfolios using Non-Hermitian Hamiltonian Simulation
+  data_mode: synthetic
+  synthetic_label: true
+random_seed: 20260526
+market:
+  risk_free_rate_default: 0.065
+  india_trading_days: 252
+  valuation_date: '2026-05-26'
+  underlyings:
+    NIFTY:
+      spot: 24000
+      strike_step: 50
+      base_volatility: 0.18
+      spot_range: [22000, 26000]
+    BANKNIFTY:
+      spot: 52000
+      strike_step: 100
+      base_volatility: 0.22
+      spot_range: [45000, 60000]
+    FINNIFTY:
+      spot: 23500
+      strike_step: 50
+      base_volatility: 0.20
+      spot_range: [18000, 26000]
+  maturities_days: [7, 14, 30, 60]
+synthetic_market:
+  strikes_each_side: 8
+  smile_strength: 0.55
+  skew_strength: -0.10
+  min_volatility: 0.08
+  max_volatility: 0.35
+  bid_ask_base_spread: 0.008
+  bid_ask_wing_spread: 0.030
+  min_open_interest: 500
+  max_open_interest: 120000
+  min_volume: 10
+  max_volume: 25000
+portfolio:
+  contract_multiplier: 1
+stress:
+  spot_shocks: [-0.05, -0.02, -0.01, -0.005, 0.0, 0.005, 0.01, 0.02, 0.05]
+  volatility_relative_shocks: [-0.10, -0.05, 0.0, 0.05, 0.10]
+  volatility_absolute_shocks: [-0.02, 0.0, 0.02, 0.05]
+  time_decay_days: [1, 3, 7]
+  rate_shocks: [-0.005, -0.0025, 0.0, 0.0025, 0.005]
+  monte_carlo_scenarios: 5000
+  monte_carlo_horizon_days: 1
+  var_levels: [0.95, 0.99]
+finite_difference:
+  stock_steps: 160
+  time_steps: 160
+  method: crank_nicolson
+quantum:
+  default_grid_qubits: 8
+  greeks_grid_qubits: 7
+  portfolio_grid_qubits: 7
+  max_full_matrix_qubits: 6
+  x_width: 0.80
+  small_qiskit_max_qubits: 5
+  sigma_epsilon: 0.005
+  time_epsilon_years: 0.0027397260273972603
+  rate_epsilon: 0.0005
+  safe_statevector_memory_gb: 1.0
+  scaling_qubits: [4, 6, 8, 10, 12, 14, 16, 20, 24, 30, 35, 40]
+plotting:
+  dpi: 150
+  style: default

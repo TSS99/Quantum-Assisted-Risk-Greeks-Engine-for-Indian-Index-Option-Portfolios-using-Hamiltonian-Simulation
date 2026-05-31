@@ -1,0 +1,63 @@
+valuation_date: '2026-05-26'
+description: Synthetic Indian index option portfolio for reproducible notebook experiments. Values are not live market data.
+positions:
+  - label: NIFTY_ATM_LONG_PUT_30D
+    underlying: NIFTY
+    option_type: put
+    strike: 24000
+    expiry: '2026-06-25'
+    maturity: 0.0821917808
+    quantity: 75
+    market_price: 610.0
+    implied_volatility: 0.18
+    risk_free_rate: 0.065
+    spot: 24000
+    source: synthetic_manual_config
+  - label: NIFTY_OTM_SHORT_CALL_30D
+    underlying: NIFTY
+    option_type: call
+    strike: 25000
+    expiry: '2026-06-25'
+    maturity: 0.0821917808
+    quantity: -50
+    market_price: 210.0
+    implied_volatility: 0.19
+    risk_free_rate: 0.065
+    spot: 24000
+    source: synthetic_manual_config
+  - label: BANKNIFTY_ATM_LONG_CALL_14D
+    underlying: BANKNIFTY
+    option_type: call
+    strike: 52000
+    expiry: '2026-06-09'
+    maturity: 0.0383561644
+    quantity: 30
+    market_price: 965.0
+    implied_volatility: 0.22
+    risk_free_rate: 0.065
+    spot: 52000
+    source: synthetic_manual_config
+  - label: BANKNIFTY_ITM_SHORT_PUT_60D
+    underlying: BANKNIFTY
+    option_type: put
+    strike: 54000
+    expiry: '2026-07-25'
+    maturity: 0.1643835616
+    quantity: -20
+    market_price: 2630.0
+    implied_volatility: 0.24
+    risk_free_rate: 0.065
+    spot: 52000
+    source: synthetic_manual_config
+  - label: NIFTY_OTM_LONG_PUT_7D
+    underlying: NIFTY
+    option_type: put
+    strike: 23000
+    expiry: '2026-06-02'
+    maturity: 0.0191780822
+    quantity: 100
+    market_price: 58.0
+    implied_volatility: 0.20
+    risk_free_rate: 0.065
+    spot: 24000
+    source: synthetic_manual_config
