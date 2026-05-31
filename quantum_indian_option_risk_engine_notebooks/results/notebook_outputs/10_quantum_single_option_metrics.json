@@ -1,0 +1,23 @@
+{
+  "against_black_scholes": {
+    "RMSE": 1139.4633355192257,
+    "MAE": 337.11290609659034,
+    "MaxAbsError": 6446.217961214518,
+    "RelativeErrorMean": 180.53215224012467,
+    "ATMErrorMAE": 0.28479401117003533,
+    "ITMErrorMAE": 325.882231850581,
+    "OTMErrorMAE": 375.7279796991379
+  },
+  "against_finite_difference": {
+    "RMSE": 1139.4643638573339,
+    "MAE": 337.66175735924975,
+    "MaxAbsError": 6446.217961214518,
+    "RelativeErrorMean": 180.54588306981586,
+    "ATMErrorMAE": 4.331694417963701,
+    "ITMErrorMAE": 326.3795053137603,
+    "OTMErrorMAE": 376.04401452191684
+  },
+  "post_selection_probability": 0.8972465105200036,
+  "price_at_spot": 432.6269470204745,
+  "classical_at_spot": 431.4201024780032
+}
