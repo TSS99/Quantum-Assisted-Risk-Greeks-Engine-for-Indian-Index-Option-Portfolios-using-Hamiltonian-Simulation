@@ -1,0 +1,28 @@
+{
+  "classical_totals": {
+    "total_theoretical_value": -4352.128681811483,
+    "total_market_value": 17400.0,
+    "total_pnl": -21752.128681811486,
+    "portfolio_Delta": -24.721681471824983,
+    "portfolio_Gamma": 0.03199640514565869,
+    "portfolio_Vega": 85983.05325349397,
+    "portfolio_Theta": -527702.2044499277,
+    "portfolio_Rho": 44012.35533841665
+  },
+  "quantum_totals": {
+    "total_quantum_value": -3716.36199797068,
+    "portfolio_quantum_Delta": -26.006227679622025,
+    "portfolio_quantum_Gamma": 0.03348158729371469,
+    "portfolio_quantum_Vega": 84257.98914117712,
+    "portfolio_quantum_Theta": -525523.053400387,
+    "portfolio_quantum_Rho": 43552.81068893425
+  },
+  "portfolio_value_error": 635.7666838408031,
+  "portfolio_greeks_error": {
+    "Delta": -1.2845462077970424,
+    "Gamma": 0.0014851821480559996,
+    "Vega": -1725.0641123168461,
+    "Theta": 2179.151049540611,
+    "Rho": -459.5446494823991
+  }
+}
